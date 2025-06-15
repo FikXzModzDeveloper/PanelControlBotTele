@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Halaman Tidak Ditemukan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .error-page {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        
-        .error-icon {
-            font-size: 4rem;
-            color: var(--primary-light);
-            margin-bottom: 20px;
-        }
-        
-        .error-page h1 {
-            font-size: 5rem;
-            margin-bottom: 10px;
-        }
-        
-        .error-page h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        
-        .error-page p {
-            margin-bottom: 30px;
-            color: var(--text-secondary);
-        }
-        
-        .home-btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            font-weight: bold;
-        }
-        
-        .home-btn:hover {
-            background-color: var(--primary-dark);
-        }
-        
-        @media (max-width: 768px) {
-            .error-page h1 {
-                font-size: 3rem;
-            }
-            
-            .error-page h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Halaman Tidak Ditemukan</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      flex-direction: column;
+      text-align: center;
+    }
+    .container {
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      font-weight: 900;
+      color: #ef4444;
+      text-shadow: 0 0 20px #f87171;
+    }
+    h2 {
+      margin: 0.5rem 0 1rem;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 2rem;
+      background: transparent;
+      color: #38bdf8;
+      border: 2px solid #38bdf8;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    a.button:hover {
+      background: #38bdf8;
+      color: #0f172a;
+      box-shadow: 0 0 10px #38bdf8;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-<body class="error-page">
-    <div class="container">
-        <div class="error-icon">
-            <i class="fas fa-exclamation-triangle"></i>
-        </div>
-        <h1>404</h1>
-        <h2>Halaman Tidak Ditemukan</h2>
-        <p>Maaf, halaman yang Anda cari tidak ada atau telah dipindahkan.</p>
-        <a href="/" class="home-btn">Kembali ke Beranda</a>
-    </div>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <h2>Halaman Tidak Ditemukan</h2>
+    <p>Maaf, halaman yang kamu cari tidak tersedia atau sudah dipindahkan.</p>
+    <a href="/" class="button">Kembali ke Beranda</a>
+  </div>
 </body>
 </html>
